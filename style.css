@@ -26,7 +26,7 @@ span {
 }
 
 .button {
-    color: white;
+    color: #fff;
     border: #20a8b4;
     background-color: #20a8b4;
     text-align: left;
@@ -44,16 +44,17 @@ ul {
     padding: 10px;
     overflow: hidden;
     font-size: 12px;
+    font-color: #000;
 }
 
 li {
     padding: 14px 16px;
     font-size: 20px;
-    color: black;
+    color: #000;
 }
 
 li a {
-    color: black;
+    color: #000;
     text-decoration: none;
     font-size: 18px;
     top: 10px;
@@ -99,3 +100,48 @@ p{
     top: 375px;
     height: auto;
 }
+
+@media screen and (min-width: 350px) {
+    
+    img {
+        display: none;
+    }
+    h1 {
+        flex-direction:column;
+        width: auto;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        white-space: nowrap;
+        width: auto;
+
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        float: right;
+    }
+    img {
+        display: block;
+    }
+
+    .button {
+        width: auto;
+    }
+}
+
+
+
+
